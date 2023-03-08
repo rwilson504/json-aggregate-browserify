@@ -4,7 +4,8 @@
   "description": "Create a version of json-aggregate that can be used for vanilla js.",
   "main": "index.js",
   "scripts": {    
-    "build": "browserify -p tinyify index.js > dist/json-aggregate.js -d",
+    "build:dev": "browserify index.js > dist/json-aggregate.js -d",  
+    "build": "browserify -p tinyify index.js > dist/json-aggregate.min.js -d",
     "watch": "watchify index.js -o dist/json-aggregate.js -v"
   },
   "keywords": [
