@@ -1,0 +1,23 @@
+{
+  "name": "json-aggregate-browserify",
+  "version": "0.1.2",
+  "description": "Create a version of json-aggregate that can be used for vanilla js.",
+  "main": "index.js",
+  "scripts": {    
+    "build": "browserify -p tinyify index.js > dist/json-aggregate.js -d",
+    "watch": "watchify index.js -o dist/json-aggregate.js -v"
+  },
+  "keywords": [
+    "json"
+  ],
+  "author": "Richard Wilson",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "tinyify": "^3.1.0",
+    "watchify": "^4.0.0"
+  },
+  "dependencies": {
+    "json-aggregate": "0.1.2"
+  }
+}
